@@ -50,9 +50,9 @@ jobs:
           cache: true
 
       - name: Run Linter
-        uses: golangci/golangci-lint-action@v6
+        uses: golangci/golangci-lint-action@v8
         with:
-          version: latest
+          version: v2.15.0
 
       - name: Run Tests (with Race Detector)
         env:
